@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /* Primary */
+    --darkcyan: hsl(185, 75%, 39%);
+    --vddblue: hsl(229, 23%, 23%);
+    --dgblue: hsl(227, 10%, 46%);
+
+    /* Neutral */
+    --darkgray: hsl(0, 0%, 59%);
+
+
+
+
+}
+
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+* {
+    margin:0;
+    padding: 0;
+}
+body {
+    width: 1440px;
+    height: 100vh;
+    margin:0 auto;
+    background-image:url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat,no-repeat;
+    background-position:right 50vw bottom 40vh, left 50vw top 40vh;
+    background-color: var(--darkcyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+}
+
+.container {
+    width: 350px;
+    /* height: 370px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}   
+.wrapper {
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.avatar {
+    width: 100px;
+    border-radius: 50%;
+    border:3px solid white;
+    margin-top:-55px;
+    
+}
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3 {
+    
+    color:var(--vddblue);
+    font-weight: 700;
+    font-size: 18px;
+    margin-top:20px;
+    margin-bottom: 10px;
+
+}
+h3 span {
+    color:var(--darkgray);
+    font-weight: 400;
+   
+
+}
+
+p{
+    width: 100%;
+    text-align: center;
+    color:var(--darkgray);
+    font-size: 14px;
+    border-bottom: 2px solid rgba(221,220,223,255);
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+.stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom:20px;
+
+}
+.stats span {
+    display: block;
+}
+.stats span:first-child{
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+.stats span:nth-child(2){
+    color:var(--darkgray);
+    font-size: 12px;
+
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(max-width:500px) {
+    body{
+        width:375px;
+        margin:0;
+        padding:0;
+
+    }
+    .container {
+        width: 325px;
+    }
+
+}
